@@ -29,7 +29,7 @@ test("shows success message on submit with form details", () => {
     userEvent.type(zip,"30276");
     userEvent.click(button);
     
-    const confirmation = screen.getByTestId("success-message");   
+    const confirmation = screen.getByTestId("successMessage");   
     expect(confirmation).toBeInTheDocument();
     
 });
